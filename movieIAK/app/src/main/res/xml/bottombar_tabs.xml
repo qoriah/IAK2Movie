@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs>
+    <tab
+        id="@+id/tab_popular"
+        icon="@drawable/ic_stars"
+        barColorWhenSelected="@color/colorPrimary"
+        inActiveColor="@color/divider"
+        activeColor="#FFFFFF"
+        title="Popular" />
+    <tab
+        id="@+id/tab_top_rated"
+        icon="@drawable/ic_folder_special"
+        title="Top Rated"
+        barColorWhenSelected="@color/colorPrimary"
+        inActiveColor="@color/divider"
+        activeColor="#FFFFFF"/>
+    <tab
+        id="@+id/tab_favorites"
+        icon="@drawable/ic_favorite"
+        title="Favorites"
+        barColorWhenSelected="@color/colorPrimary"
+        inActiveColor="@color/divider"
+        activeColor="#FFFFFF"/>
+
+
+
+</tabs>

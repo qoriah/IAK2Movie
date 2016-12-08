@@ -1,0 +1,95 @@
+apply plugin: 'com.android.application'
+apply plugin: 'android-apt'
+apply plugin: 'com.neenbedankt.android-apt'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.0"
+    defaultConfig {
+        applicationId "id.paniclabs.movies"
+        minSdkVersion 17
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+        vectorDrawables.useSupportLibrary = true
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+ext {
+    supportLibVersion = '25.0.0'
+    bottomBar = ':bottom-bar'
+    butterknifeVersion = '8.4.0'
+    gsonVersion = '2.8.0'
+    glideVersion = '3.7.0'
+    schematicVersion = '0.6.7'
+    versiTerbaru = 'latest.release'
+}
+
+configurations.all {
+    resolutionStrategy.force 'com.android.support:support-annotations:25.0.0'
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    testCompile 'junit:junit:4.12'
+    // BottomBar
+    compile 'com.roughike:bottom-bar:2.0.2'
+
+    // Android Support Library
+    compile "com.android.support:appcompat-v7:${supportLibVersion}"
+    compile "com.android.support:design:${supportLibVersion}"
+    compile "com.android.support:recyclerview-v7:${supportLibVersion}"
+    compile "com.android.support:cardview-v7:${supportLibVersion}"
+    compile "com.android.support:support-v4:${supportLibVersion}"
+
+    // Data Binding dengan Butterknife
+    apt "com.jakewharton:butterknife-compiler:${butterknifeVersion}"
+    compile "com.jakewharton:butterknife:${butterknifeVersion}"
+
+    // RestClient dan Networking
+    compile "com.squareup.retrofit2:retrofit:${versiTerbaru}"
+    compile "com.squareup.retrofit2:converter-gson:${versiTerbaru}"
+    compile "com.squareup.retrofit2:adapter-rxjava:${versiTerbaru}"
+    compile "com.squareup.okhttp3:logging-interceptor:${versiTerbaru}"
+
+    //rxJava
+    compile "io.reactivex:rxjava:${versiTerbaru}"
+    compile "io.reactivex:rxandroid:${versiTerbaru}"
+
+    // Database schematic
+    compile "net.simonvt.schematic:schematic:${schematicVersion}"
+    apt "net.simonvt.schematic:schematic-compiler:${schematicVersion}"
+
+    // Gson Lib
+    compile "com.google.code.gson:gson:${gsonVersion}"
+
+    // Image Loader
+    compile "com.github.bumptech.glide:glide:${glideVersion}"
+
+    // Annotation
+    compile 'org.glassfish:javax.annotation:10.0-b28'
+
+    // Multidex
+    compile 'com.android.support:multidex:1.0.1'
+
+    // Depedencies Lainnya
+    compile 'com.github.arimorty:floatingsearchview:2.0.3'
+
+
+}

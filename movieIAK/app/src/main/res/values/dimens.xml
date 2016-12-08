@@ -1,0 +1,36 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="bottombar_height">56dp</dimen>
+    <dimen name="bottombar_elevation">8dp</dimen>
+    <dimen name="custom_layout_movie_tv_min_height">10dp</dimen>
+    <dimen name="fragment_grid_movie_network_unavailable">20sp</dimen>
+    <dimen name="fragment_detaila_backdrop_height">200dp</dimen>
+    <dimen name="frargment_details_image_placeholder_width">140dp</dimen>
+    <dimen name="frargment_details_image_placeholder_height">160dp</dimen>
+    <dimen name="frargment_details_image_placeholder_top_margin">120dp</dimen>
+    <dimen name="frargment_details_image_placeholder_left_margin">10dp</dimen>
+    <dimen name="frargment_details_image_placeholder_corner_radius">5dp</dimen>
+    <dimen name="frargment_details_image_placeholder_elevation">5dp</dimen>
+    <dimen name="frargment_details_title_textsize">16sp</dimen>
+    <dimen name="frargment_details_padding__movie_detail">3dp</dimen>
+    <dimen name="frargment_details_pot_text_size">25sp</dimen>
+    <dimen name="frargment_details_plot_padding_left">15dp</dimen>
+    <dimen name="frargment_details_synopsis_cv_margin">10dp</dimen>
+    <dimen name="frargment_details_plot_padding">5dp</dimen>
+    <dimen name="frargment_details_plot_text_size">15sp</dimen>
+    <dimen name="custom_lay_image_view_height">160dp</dimen>
+    <dimen name="custom_lay_rv_text_frame">60dp</dimen>
+    <dimen name="custom_lay_movie_name_horizontal_margin">10dp</dimen>
+    <dimen name="custom_lay_movie_name_vertical_margin">5dp</dimen>
+    <dimen name="custom_lay_movie_name_text_size">14sp</dimen>
+    <dimen name="fragment_detaila_backdrop_height_land">180dp</dimen>
+    <dimen name="frargment_details_image_placeholder_top_margin_land">100dp</dimen>
+    <dimen name="land_movie_details_padding">80dp</dimen>
+    <dimen name="movie_list_width">280dp</dimen>
+    <dimen name="appbar_layout_height">250dp</dimen>
+    <dimen name="land_movie_det_margin">80dp</dimen>
+    <dimen name="video_thumbanil_height">200dp</dimen>
+</resources>
